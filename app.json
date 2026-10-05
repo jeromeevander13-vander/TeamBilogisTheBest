@@ -1,4 +1,12 @@
 {
-  "name": "teambilog",
-  "displayName": "teambilog"
+  "expo": {
+    "name": "teambilog",
+    "slug": "teambilog",
+    "scheme": "teambilog",
+    "plugins": [
+      "expo-router",
+      "expo-image-picker"
+    ]
+  }
 }
+
