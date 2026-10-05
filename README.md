@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TindaTrack
 
 TindaTrack is a mobile order management app for sellers. It helps organize products, prepare customer orders, and keep checkout records in one place.
@@ -37,3 +38,7 @@ npx expo start
 ```
 
 Use the Expo terminal prompts to open the app on your preferred platform.
+=======
+# TeamBilogisTheBest
+TindaTrack is an order management app for sellers. It organizes products and customer orders, manage wholesale pricing, and keep checkout records in one place.
+>>>>>>> 75e8fd5c6b21382437169d9efdcadcb9c7ae1495
