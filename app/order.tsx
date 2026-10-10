@@ -11,7 +11,6 @@ import {
   TouchableOpacity,
   useWindowDimensions,
   View,
-  type ScrollViewInstance,
 } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { useRouter } from 'expo-router';
@@ -66,7 +65,7 @@ export default function OrderScreen() {
   const [storeAddress, setStoreAddress] = useState<string>('');
   const [mobileNumber, setMobileNumber] = useState<string>('');
 
-  const cartScrollRef = useRef<ScrollViewInstance>(null);
+  const cartScrollRef = useRef<ScrollView>(null);
   const productsListRef = useRef<FlatList<Product>>(null);
 
 
@@ -133,8 +132,8 @@ export default function OrderScreen() {
 
   const animateBadge = (): void => {
     Animated.sequence([
-      Animated.spring(badgeBounce, { toValue: 1.5, useNativeDriver: true, speed: 30 }),
-      Animated.spring(badgeBounce, { toValue: 1, useNativeDriver: true, speed: 20 }),
+      Animated.spring(badgeBounce, { toValue: 1.5, useNativeDriver: false, speed: 30 }),
+      Animated.spring(badgeBounce, { toValue: 1, useNativeDriver: false, speed: 20 }),
     ]).start();
   };
 
