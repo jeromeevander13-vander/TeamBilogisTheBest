@@ -40,7 +40,7 @@ This application allows store owners to:
 - app/ — screen routes and navigation
 - components/ — reusable UI components
 - types/ — TypeScript data models
-- __tests__/ — Jest test files
+
 
 ## Getting Started
 
@@ -59,21 +59,38 @@ npm install
 ### Run the app
 
 ```bash
+cd teambilog
 npx expo start
 ```
 
 Then use the Expo terminal options to open it on Android, iOS, or the web.
 
-## Rubric Alignment
+## Putting the app in GitHub
 
-This project aligns with the evaluation rubric in these areas:
+- cd teambilog
+- git add .
+- git commit -m "comment"
+- git push
 
-- Presentation & Live Demo: clear and functional order workflow
-- Creativity & Innovation: solves a real-world store-order problem
-- Technical Execution: React Native, navigation, persistence, product management
-- Code Documentation & Architecture: modular screens and typed data models
+
+  ## Purpose and use of the file
+
+  App.tsx: the app’s startup/root screen. It shows the basic welcome UI and wraps the app in safe-area settings.
+  app/_layout.tsx: shared layout for the app screens; sets the app’s navigation stack and header style.
+  app/index.tsx: home screen for managing product categories.
+  app/order.tsx: screen for choosing products, adding to cart, and creating an order.
+  app/checked-out.tsx: screen for viewing finished/checked-out orders.
+  components/ProductCard.tsx: reusable card UI for each product.
+  types/sales.ts: defines the data structure for products and orders.
 
 ## Team
 
 Team Bilog
+Leader:Jerome Evander Mantilla
+Members:
+Josiephos Pradilla
+Clint Jason Legaspi
+Edsel Procurato
+Kyrene Chloe Juezan
+
 >>>>>>> 75e8fd5c6b21382437169d9efdcadcb9c7ae1495
